@@ -1,0 +1,26 @@
+# ./npp_demo img_path des_size isFixResize isSymmetryPad roi_x roi_y roi_w roi_h
+
+./npp_demo Joe_Biden_presidential_portrait.jpg 640 0 0
+mkdir cpp_des_size_640_isFixResize_0_isSymmetryPad_0
+mv img_after_* cpp_des_size_640_isFixResize_0_isSymmetryPad_0
+
+./npp_demo Joe_Biden_presidential_portrait.jpg 640 1 0
+mkdir cpp_des_size_640_isFixResize_1_isSymmetryPad_0
+mv img_after_* cpp_des_size_640_isFixResize_1_isSymmetryPad_0
+
+./npp_demo Joe_Biden_presidential_portrait.jpg 640 1 1
+mkdir cpp_des_size_640_isFixResize_1_isSymmetryPad_1
+mv img_after_* cpp_des_size_640_isFixResize_1_isSymmetryPad_1
+
+./npp_demo Joe_Biden_presidential_portrait.jpg 640 0 0 374 132 462 624
+mkdir cpp_des_size_640_isFixResize_0_isSymmetryPad_0_roi_xywh_374_132_462_624
+mv img_after_* cpp_des_size_640_isFixResize_0_isSymmetryPad_0_roi_xywh_374_132_462_624
+
+./npp_demo Joe_Biden_presidential_portrait.jpg 640 1 0 374 132 462 624
+mkdir cpp_des_size_640_isFixResize_1_isSymmetryPad_0_roi_xywh_374_132_462_624
+mv img_after_* cpp_des_size_640_isFixResize_1_isSymmetryPad_0_roi_xywh_374_132_462_624
+
+./npp_demo Joe_Biden_presidential_portrait.jpg 640 1 1 374 132 462 624
+mkdir cpp_des_size_640_isFixResize_1_isSymmetryPad_1_roi_xywh_374_132_462_624
+mv img_after_* cpp_des_size_640_isFixResize_1_isSymmetryPad_1_roi_xywh_374_132_462_624
+

@@ -1,0 +1,4 @@
+CUDA_HOME=$1 # yout cuda home path
+echo g++ -DNDEBUG -O3 -std=c++14 npp_demo.cpp -o npp_demo -Wl,--disable-new-dtags  -I$CUDA_HOME/include -L$CUDA_HOME/lib64 -lcudart -lnppig -lnppidei -lnppial -Wl,-rpath,$CUDA_HOME/lib64 -I/usr/include -I/usr/include/opencv2 -I/usr/include/opencv4    -L/usr/lib/x86_64-linux-gnu  -lopencv_core -lopencv_imgcodecs -Wl,-rpath,/usr/lib/x86_64-linux-gnu -ldl -lm -DNPP_DEBUG # -DNPP_LONG_DEBUG
+
+g++ -DNDEBUG -O3 -std=c++14 npp_demo.cpp -o npp_demo -Wl,--disable-new-dtags  -I$CUDA_HOME/include -L$CUDA_HOME/lib64 -lcudart -lnppig -lnppidei -lnppial -Wl,-rpath,$CUDA_HOME/lib64 -I/usr/include -I/usr/include/opencv2 -I/usr/include/opencv4    -L/usr/lib/x86_64-linux-gnu  -lopencv_core -lopencv_imgcodecs -Wl,-rpath,/usr/lib/x86_64-linux-gnu -ldl -lm -DNPP_DEBUG # -DNPP_LONG_DEBUG
